@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(141, 141, 204);
+    background-image: url('./bluey_bg.png');
+    background-size: cover;
+}
+
+.body_content {
+    color: red;
+}
