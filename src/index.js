@@ -2,7 +2,7 @@ import init_website from "./website";
 import './style.css';
 
 function changeTab(e){
-    targetTab = e.target.id;
+    let targetTab = e.target.id;
     console.log(e.target.id);
     if(targetTab == "home_btn"){
         console.log("Hit home");
