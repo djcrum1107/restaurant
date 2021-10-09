@@ -4,6 +4,7 @@ body {
     background-size: cover;
 }
 
-.body_content {
-    color: red;
+.center_content {
+    height: 10px;
+    background-color: red;
 }
