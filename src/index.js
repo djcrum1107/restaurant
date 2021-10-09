@@ -1,15 +1,18 @@
 import init_website from "./website";
+import loadHome from "./home";
+import loadMenu from "./menu";
+import loadContact from "./contact";
 import './style.css';
 
 function changeTab(e){
     let targetTab = e.target.id;
     console.log(e.target.id);
     if(targetTab == "home_btn"){
-        console.log("Hit home");
+        loadHome();
     }else if(targetTab == "menu_btn"){
-        
+        loadMenu();
     }else if(targetTab == "contact_btn"){
-        
+        loadContact();
     }
 }
 
