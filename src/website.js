@@ -34,10 +34,17 @@ function create_center(){
     return center;
 }
 
+function create_footer(){
+    const footer = document.createElement('div');
+
+    return footer;
+}
+
 function init_website(){
     const content = document.getElementById("content");
     content.appendChild(create_header());
     content.appendChild(create_center());
+    content.appendChild(create_footer());
 }
 
 export default init_website;
