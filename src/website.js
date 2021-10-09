@@ -4,12 +4,15 @@ function create_navigation(){
 
     const home_button = document.createElement('button');
     home_button.innerHTML = "Home";
+    home_button.id = "home_btn";
 
     const menu_button = document.createElement('button');
     menu_button.innerHTML = "Menu";
+    menu_button.id = "menu_btn";
 
     const contact_button = document.createElement('button');
     contact_button.innerHTML = "Contact";
+    contact_button.id = "contact_btn";
 
     nav.appendChild(home_button);
     nav.appendChild(menu_button);
