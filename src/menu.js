@@ -1,6 +1,7 @@
 //The initial creation of the menu content, should only be run once
 function createMenuContent(menuContent){
-    menuContent = document.createElement('menuContent');
+    menuContent = document.createElement('div');
+    menuContent.id = 'menuContent';
 
     return menuContent;
 }

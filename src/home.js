@@ -1,6 +1,12 @@
 //The initial creation of the home content, should only be run once
 function createHomeContent(homeContent){
-    homeContent = document.createElement('homeContent');
+    homeContent = document.createElement('div');
+    homeContent.id = 'homeContent';
+
+    const homeHeader = document.createElement('h1');
+    homeHeader.innerText = "Welcome to Bluely's Burgers!";
+
+    homeContent.appendChild(homeHeader);
 
     return homeContent;
 }

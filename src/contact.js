@@ -1,6 +1,7 @@
 //The initial creation of the contact content, should only be run once
 function createContactContent(contactContent){
-    contactContent = document.createElement('contactContent');
+    contactContent = document.createElement('div');
+    contactContent.id = 'contactContent';
 
     return contactContent;
 }
