@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
 body {
     background-color: #83cffc;
     background-image: url('./assets/bluey_bg.png');
     background-size: cover;
     background-repeat: no-repeat;
+    font-family: 'Nanum Pen Script', cursive;
 }
 
 #content {
@@ -55,6 +58,10 @@ button:hover {
     align-content: center;
 }
 
+h1 {
+    font-size: 48px;
+}
+
 .nav {
     display: grid;
     align-content: center;
@@ -64,9 +71,8 @@ button:hover {
 
 .center_content {
     display: grid;
-    background-color: springgreen;
 }
 
 .footer{
-    background-color: springgreen;
+    font-family: 'Times New Roman', Times, serif;
 }
