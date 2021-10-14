@@ -32,6 +32,7 @@ function create_header(){
 function create_center(){
     const center = document.createElement('div');
     
+    center.id = "center_content";
     center.classList.add('center_content');
 
     return center;

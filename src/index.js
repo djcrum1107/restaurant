@@ -4,16 +4,34 @@ import loadMenu from "./menu";
 import loadContact from "./contact";
 import './style.css';
 
+var currentTab = null;
+
+function removeAllChildNodes(parent) {
+    while (parent.firstChild) {
+        parent.removeChild(parent.firstChild);
+    }
+}
+
+function loadTab(targetTab){
+    if (targetTab != currentTab){
+        currentTab = targetTab;
+
+        removeAllChildNodes(document.getElementById('center_content'));
+        
+        if(targetTab == "home_btn"){
+            loadHome();
+        }else if(targetTab == "menu_btn"){
+            loadMenu();
+        }else if(targetTab == "contact_btn"){
+            loadContact();
+        }
+    }
+    
+}
+
 function changeTab(e){
     let targetTab = e.target.id;
-    console.log(e.target.id);
-    if(targetTab == "home_btn"){
-        loadHome();
-    }else if(targetTab == "menu_btn"){
-        loadMenu();
-    }else if(targetTab == "contact_btn"){
-        loadContact();
-    }
+    loadTab(targetTab);
 }
 
 function setupTabs(){
@@ -24,6 +42,7 @@ function setupTabs(){
         button.addEventListener("click", changeTab);
         console.log(button.id);
     });
+
 }
 
 init_website();
