@@ -4,7 +4,7 @@ function createHomeContent(homeContent){
     homeContent.id = 'homeContent';
 
     const homeHeader = document.createElement('h1');
-    homeHeader.innerText = "Welcome to Bluely's Burgers!";
+    homeHeader.innerText = "Welcome to Bluey's Burgers!";
 
     homeContent.appendChild(homeHeader);
 
