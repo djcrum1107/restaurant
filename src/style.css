@@ -10,12 +10,23 @@ body {
 }
 
 button {
-    box-shadow: silver;
+    width: 100px;
+}
+
+.button-active {
+    text-align: right;
 }
 
 .header{
     display: grid;
     align-content: center;
+}
+
+.nav {
+    display: grid;
+    align-content: center;
+    grid-template-columns: auto 100px 100px 100px auto;
+    justify-items: end;
 }
 
 .center_content {

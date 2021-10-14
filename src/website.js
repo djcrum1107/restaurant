@@ -1,6 +1,8 @@
 
 function create_navigation(){
-    const nav = document.createElement('nav');
+    const nav = document.createElement('div');
+
+    nav.classList.add('nav');
 
     const home_button = document.createElement('button');
     home_button.innerHTML = "Home";
