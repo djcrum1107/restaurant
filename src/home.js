@@ -1,15 +1,16 @@
-
-
+//The initial creation of the home content, should only be run once
 function createHomeContent(homeContent){
     homeContent = document.createElement('homeContent');
 
     return homeContent;
 }
 
+//Load the home content. Create the home content if it has not already been created, otherwise append the already created home content
 function loadHome(){
     const workspace = document.getElementById('center_content');
     let homeContent;
 
+    //If the home content does not exist yet create it
     if(typeof homeContent == "undefined"){
         homeContent = createHomeContent(homeContent);
     }
@@ -17,4 +18,5 @@ function loadHome(){
     console.log("Home loaded");
 }
 
+//Export only needed load function
 export default loadHome;
