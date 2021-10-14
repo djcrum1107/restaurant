@@ -1,10 +1,28 @@
 body {
-    background-color: rgb(141, 141, 204);
-    background-image: url('./bluey_bg.png');
+    background-color: #83cffc;
+    background-image: url('./assets/bluey_bg.png');
     background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#content {
+    display: grid;
+}
+
+button {
+    box-shadow: silver;
+}
+
+.header{
+    display: grid;
+    align-content: center;
 }
 
 .center_content {
     height: 10px;
-    background-color: red;
+    outline-color: red;
+}
+
+.footer{
+
 }

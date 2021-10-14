@@ -23,7 +23,7 @@ function create_navigation(){
 
 function create_header(){
     const header = document.createElement('div');
-
+    header.classList.add('header');
     header.appendChild(create_navigation());
 
     return header;
@@ -40,6 +40,7 @@ function create_center(){
 
 function create_footer(){
     const footer = document.createElement('div');
+    footer.classList.add('footer');
 
     return footer;
 }
