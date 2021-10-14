@@ -7,14 +7,19 @@ function create_navigation(){
     const home_button = document.createElement('button');
     home_button.innerHTML = "Home";
     home_button.id = "home_btn";
+    home_button.classList.add('bouncy');
 
     const menu_button = document.createElement('button');
     menu_button.innerHTML = "Menu";
     menu_button.id = "menu_btn";
+    menu_button.classList.add('bouncy');
+    menu_button.style.animationDelay = '0.07s';
 
     const contact_button = document.createElement('button');
     contact_button.innerHTML = "Contact";
     contact_button.id = "contact_btn";
+    contact_button.classList.add('bouncy');
+    contact_button.style.animationDelay = '0.14s';
 
     nav.appendChild(home_button);
     nav.appendChild(menu_button);
