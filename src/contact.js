@@ -4,15 +4,15 @@ function createContactContent(contactContent){
     contactContent.id = 'contactContent';
 
     const contactBlurb = document.createElement('p1');
-    contactBlurb.innerText = "If you would like to reach out to us don't hesitate to call or email!";
+    contactBlurb.innerText = "If you would like to reach out to us don't hesitate to call or email!\r\n";
     contactBlurb.style.fontSize = '30px';
     contactContent.appendChild(contactBlurb);
 
-    const contactNumber = document.createElement('h2');
+    const contactNumber = document.createElement('h1');
     contactNumber.innerText = "+1 (234) 567-1234"
     contactContent.appendChild(contactNumber);
 
-    const contactEmail = document.createElement('h2');
+    const contactEmail = document.createElement('h1');
     contactEmail.innerText = "blueyburgers@bb.com"
     contactContent.appendChild(contactEmail);
 

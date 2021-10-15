@@ -5,6 +5,7 @@ body {
     background-image: url('./assets/bluey_bg.png');
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: scroll;
     width: auto;
     font-family: 'Nanum Pen Script', cursive;
 }
