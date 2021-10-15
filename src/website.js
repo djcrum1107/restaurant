@@ -21,6 +21,7 @@ function create_navigation(){
     contact_button.classList.add('bouncy');
     contact_button.style.animationDelay = '0.14s';
 
+    nav.appendChild(document.createElement('div'));
     nav.appendChild(home_button);
     nav.appendChild(menu_button);
     nav.appendChild(contact_button);

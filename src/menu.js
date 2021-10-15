@@ -28,6 +28,9 @@ function createMenuContent(menuContent){
     'A delicious beef patty with a side of fries for the kids!', 
     './assets/burger.jpeg'));
 
+    menuContent.appendChild(createMenuItem('Bluey Burger', 
+    'A delicious beef patty with a side of fries for the kids!', 
+    './assets/burger.jpeg'));
 
     return menuContent;
 }

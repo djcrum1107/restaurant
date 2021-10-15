@@ -5,6 +5,7 @@ body {
     background-image: url('./assets/bluey_bg.png');
     background-size: cover;
     background-repeat: no-repeat;
+    width: auto;
     font-family: 'Nanum Pen Script', cursive;
 }
 
@@ -60,13 +61,40 @@ button:hover {
 
 h1 {
     font-size: 48px;
+    display: inline-block;
+    background-color: #85d0fc;
+    box-shadow: 0px 0px 5px 10px #85d0fc;
+}
+
+.menuItem {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    width: 320px;
+    justify-items: center;
+    padding-top: 10px;
+}
+
+.menuItem>h2 {
+    font-size: 30px;
+    margin: 10px 0 0 0;
+    text-decoration: underline;
+    background-color: #85d0fc;
+    box-shadow: 0px 0px 5px 10px #85d0fc;
+}
+
+.menuItem>p {
+    align-self: top;
+    margin: 0 30px 0 30px;
+    background-color: #85d0fc;
+    box-shadow: 0px 0px 5px 10px #85d0fc;
+    text-align: center;
 }
 
 .nav {
     display: grid;
     align-content: center;
     grid-template-columns: auto 150px 150px 150px auto;
-    justify-items: end;
+    justify-items: center;
 }
 
 .center_content {
