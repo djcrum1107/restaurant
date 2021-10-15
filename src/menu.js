@@ -28,9 +28,13 @@ function createMenuContent(menuContent){
     'A delicious beef patty with a side of fries for the kids!', 
     './assets/burger.jpeg'));
 
-    menuContent.appendChild(createMenuItem('Bluey Burger', 
-    'A delicious beef patty with a side of fries for the kids!', 
-    './assets/burger.jpeg'));
+    menuContent.appendChild(createMenuItem('Rainbow Salad', 
+    'A wonderfully healthy and delicious salad made with all of the colors!', 
+    './assets/salad.jpeg'));
+
+    menuContent.appendChild(createMenuItem('Well ya, it\'s chocolate!', 
+    'Who can resist some delicious chololate ice cream on a hot sunny day, not me!', 
+    './assets/chocolateIceCream.jpeg'));
 
     return menuContent;
 }
